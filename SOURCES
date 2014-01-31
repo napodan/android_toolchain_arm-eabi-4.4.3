@@ -6,12 +6,10 @@ gcc/ synced to
 	commit b6be42e837844cce5283f42fcfac31e6d66a277d (honeycomb)
 
 binutils/ synced to
-	commit 8a5a8339de3149b7f99caf08e9cb72467d60cd01 (honeycomb)
-	Author: Jing Yu <jingyu@google.com>
-	Date:   Thu Nov 4 17:22:38 2010 -0700
+	commit e4df3e0a5bb640ccfa2f30ee67fe9b3146b152d6
 
 gdb/ synced to
-	commit 3954a66c7a6939e2c7bed362ec4df06b9f921bcf (honeycomb)
+	commit 5f9d38fd85e779aa1fd17eb38d24f8ec994d9147
 
 gmp/ synced to
 	commit 9fb242a79dd122d7fbf867daf5620dba6927bd2e (honeycomb)
@@ -24,15 +22,13 @@ mpfr/ synced to
 	Date:   Thu Nov 5 17:50:13 2009 -0800
 
 build/ synced to
-	commit 4cc02faaa7e8828f9458b1828a6f85e7791ae2aa (honeycomb)
-	Author: Jim Huang <jserv@0xlab.org>
-	Date:   Fri Aug 20 23:30:37 2010 +0800
+	commit 7ee395d10100fc9ed2c03c49b949033600082a4f
 
 commands :
 epxort LANG=C
 build-sysroot.sh $OUT /home/david/sysroot_oxygen/ 
 cd build
 
-./configure --prefix=/home/david/arm-eabi-4.4.3/ --target=arm-eabi --host=x86_64-linux-gnu --build=x86_64-linux-gnu --with-gnu-as --with-gnu-ld --enable-languages=c,c++ --disable-libssp --enable-threads --disable-nls --disable-libmudflap --disable-libgomp --disable-libstdc__-v3 --disable-sjlj-exceptions --disable-shared --disable-tls --with-float=soft --with-fpu=neon --with-arch=armv7-a --with-tune=cortex-a8 --enable-target-optspace --with-abi=aapcs --with-gcc-version=4.4.3 --with-binutils-version=2.19 --with-gmp-version=4.2.4 --with-mpfr-version=2.4.1 --with-gdb-version=7.1.x --with-multilib-list=mandroid --with-sysroot=/home/david/sysroot_oxygen/  --enable-gold=both/gold --program-transform-name='s&^&arm-eabi-&'
+./configure --prefix=/home/david/arm-eabi-4.4.3/ --target=arm-eabi --host=x86_64-linux-gnu --build=x86_64-linux-gnu --with-gnu-as --with-gnu-ld --enable-languages=c,c++ --disable-libssp --enable-threads --disable-nls --disable-libmudflap --disable-libgomp --disable-libstdc__-v3 --disable-sjlj-exceptions --disable-shared --disable-tls --with-float=soft --with-fpu=neon --with-arch=armv7-a --with-tune=cortex-a8 --enable-target-optspace --with-abi=aapcs --with-gcc-version=4.4.3 --with-gmp-version=4.2.4 --with-mpfr-version=2.4.1 --with-gdb-version=7.1.x --with-multilib-list=mandroid --with-sysroot=/home/david/sysroot_oxygen/ --with-binutils-version=2.20.1 --with-gold-version=20100303 --enable-gold=both/gold --program-transform-name='s&^&arm-eabi-&'
 
 
