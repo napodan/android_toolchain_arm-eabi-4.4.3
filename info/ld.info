@@ -5911,8 +5911,8 @@ might as well expedite matters by sending them to begin with.
 
 File: ld.info,  Node: MRI,  Next: GNU Free Documentation License,  Prev: Reporting Bugs,  Up: Top
 
-Appendix A MRI Compatible Script Files
-**************************************
+Annexe A MRI Compatible Script Files
+************************************
 
 To aid users making the transition to GNU `ld' from the MRI linker,
 `ld' can use MRI compatible linker scripts as an alternative to the
@@ -6028,8 +6028,8 @@ list shows only the upper-case form of each command.
 
 File: ld.info,  Node: GNU Free Documentation License,  Next: LD Index,  Prev: MRI,  Up: Top
 
-Appendix B GNU Free Documentation License
-*****************************************
+Annexe B GNU Free Documentation License
+***************************************
 
                         Version 1.1, March 2000
 
@@ -7219,7 +7219,7 @@ Node: Reporting Bugs246855
 Node: Bug Criteria247549
 Node: Bug Reporting248248
 Node: MRI255287
-Node: GNU Free Documentation License259930
-Node: LD Index279635
+Node: GNU Free Documentation License259926
+Node: LD Index279627
 
 End Tag Table

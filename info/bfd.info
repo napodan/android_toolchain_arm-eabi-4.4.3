@@ -8917,8 +8917,8 @@ the DWARF 2 debugging format.
 
 File: bfd.info,  Node: GNU Free Documentation License,  Next: BFD Index,  Prev: BFD back ends,  Up: Top
 
-Appendix A GNU Free Documentation License
-*****************************************
+Annexe A GNU Free Documentation License
+***************************************
 
                         Version 1.1, March 2000
 
@@ -10817,6 +10817,6 @@ Node: File layout318840
 Node: Symbol-table324487
 Node: mmo section mapping328256
 Node: GNU Free Documentation License331908
-Node: BFD Index351625
+Node: BFD Index351621
 
 End Tag Table

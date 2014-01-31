@@ -8,7 +8,6 @@
 # include "config/arm/unknown-elf.h"
 # include "config/arm/elf.h"
 # include "config/arm/bpabi.h"
-# include "config/arm/eabi.h"
 # include "config/arm/aout.h"
 # include "config/arm/arm.h"
 # include "defaults.h"

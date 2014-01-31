@@ -3018,8 +3018,8 @@ info.  >>
 
 File: stabs.info,  Node: Stab Types,  Next: Symbol Descriptors,  Prev: Cplusplus,  Up: Top
 
-Appendix A Table of Stab Types
-******************************
+Annexe A Table of Stab Types
+****************************
 
 The following are all the possible values for the stab type field, for
 a.out files, in numeric order.  This does not apply to XCOFF, but it
@@ -3265,8 +3265,8 @@ languages other than C.
 
 File: stabs.info,  Node: Symbol Descriptors,  Next: Type Descriptors,  Prev: Stab Types,  Up: Top
 
-Appendix B Table of Symbol Descriptors
-**************************************
+Annexe B Table of Symbol Descriptors
+************************************
 
 The symbol descriptor is the character which follows the colon in many
 stabs, and which tells what kind of stab it is.  *Note String Field::,
@@ -3381,8 +3381,8 @@ for more information about their use.
 
 File: stabs.info,  Node: Type Descriptors,  Next: Expanded Reference,  Prev: Symbol Descriptors,  Up: Top
 
-Appendix C Table of Type Descriptors
-************************************
+Annexe C Table of Type Descriptors
+**********************************
 
 The type descriptor is the character which follows the type number and
 an equals sign.  It specifies what kind of type is being defined.
@@ -3520,8 +3520,8 @@ an equals sign.  It specifies what kind of type is being defined.
 
 File: stabs.info,  Node: Expanded Reference,  Next: Questions,  Prev: Type Descriptors,  Up: Top
 
-Appendix D Expanded Reference by Stab Type
-******************************************
+Annexe D Expanded Reference by Stab Type
+****************************************
 
 For a full list of stab types, and cross-references to where they are
 described, see *note Stab Types::.  This appendix just covers certain
@@ -3745,8 +3745,8 @@ D.13 N_LENG
 
 File: stabs.info,  Node: Questions,  Next: Stab Sections,  Prev: Expanded Reference,  Up: Top
 
-Appendix E Questions and Anomalies
-**********************************
+Annexe E Questions and Anomalies
+********************************
 
    * For GNU C stabs defining local and global variables (`N_LSYM' and
      `N_GSYM'), the desc field is supposed to contain the source line
@@ -3777,8 +3777,8 @@ Appendix E Questions and Anomalies
 
 File: stabs.info,  Node: Stab Sections,  Next: Symbol Types Index,  Prev: Questions,  Up: Top
 
-Appendix F Using Stabs in Their Own Sections
-********************************************
+Annexe F Using Stabs in Their Own Sections
+******************************************
 
 Many object file formats allow tools to create object files with custom
 sections containing any arbitrary data.  For any such object file
@@ -3923,8 +3923,8 @@ scheme.
 
 File: stabs.info,  Node: GNU Free Documentation License,  Prev: Symbol Types Index,  Up: Top
 
-Appendix G GNU Free Documentation License
-*****************************************
+Annexe G GNU Free Documentation License
+***************************************
 
                       Version 1.2, November 2002
 
@@ -4508,29 +4508,29 @@ Node: Inheritance116936
 Node: Virtual Base Classes120632
 Node: Static Members122876
 Node: Stab Types123346
-Node: Non-Stab Symbol Types123970
-Node: Stab Symbol Types125401
-Node: Symbol Descriptors129332
-Node: Type Descriptors132111
-Node: Expanded Reference135323
-Node: N_PC136741
-Node: N_NSYMS137109
-Node: N_NOMAP137350
-Node: N_M2C137656
-Node: N_BROWS138090
-Node: N_DEFD138373
-Node: N_EHDECL138830
-Node: N_MOD2139081
-Node: N_CATCH139319
-Node: N_SSYM139813
-Node: N_SCOPE140098
-Node: Gould140288
-Node: N_LENG141280
-Node: Questions141508
-Node: Stab Sections143152
-Node: Stab Section Basics143750
-Node: ELF Linker Relocation147091
-Node: GNU Free Documentation License150501
-Node: Symbol Types Index172935
+Node: Non-Stab Symbol Types123966
+Node: Stab Symbol Types125397
+Node: Symbol Descriptors129328
+Node: Type Descriptors132103
+Node: Expanded Reference135311
+Node: N_PC136725
+Node: N_NSYMS137093
+Node: N_NOMAP137334
+Node: N_M2C137640
+Node: N_BROWS138074
+Node: N_DEFD138357
+Node: N_EHDECL138814
+Node: N_MOD2139065
+Node: N_CATCH139303
+Node: N_SSYM139797
+Node: N_SCOPE140082
+Node: Gould140272
+Node: N_LENG141264
+Node: Questions141492
+Node: Stab Sections143132
+Node: Stab Section Basics143726
+Node: ELF Linker Relocation147067
+Node: GNU Free Documentation License150477
+Node: Symbol Types Index172907
 
 End Tag Table

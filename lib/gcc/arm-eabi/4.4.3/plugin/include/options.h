@@ -576,29 +576,27 @@ extern void cl_target_option_print (FILE *, int, struct cl_target_option *);
 #endif
 
 #define MASK_ABORT_NORETURN (1 << 0)
-#define MASK_ANDROID (1 << 1)
-#define MASK_APCS_FLOAT (1 << 2)
-#define MASK_APCS_FRAME (1 << 3)
-#define MASK_APCS_REENT (1 << 4)
-#define MASK_APCS_STACK (1 << 5)
-#define MASK_BIG_END (1 << 6)
-#define MASK_CALLEE_INTERWORKING (1 << 7)
-#define MASK_CALLER_INTERWORKING (1 << 8)
-#define MASK_CIRRUS_FIX_INVALID_INSNS (1 << 9)
-#define MASK_FPE (1 << 10)
-#define MASK_LONG_CALLS (1 << 11)
-#define MASK_POKE_FUNCTION_NAME (1 << 12)
-#define MASK_SCHED_PROLOG (1 << 13)
-#define MASK_SINGLE_PIC_BASE (1 << 14)
-#define MASK_THUMB (1 << 15)
-#define MASK_INTERWORK (1 << 16)
-#define MASK_TPCS_FRAME (1 << 17)
-#define MASK_TPCS_LEAF_FRAME (1 << 18)
-#define MASK_NEON_VECTORIZE_QUAD (1 << 19)
-#define MASK_LITTLE_WORDS (1 << 20)
+#define MASK_APCS_FLOAT (1 << 1)
+#define MASK_APCS_FRAME (1 << 2)
+#define MASK_APCS_REENT (1 << 3)
+#define MASK_APCS_STACK (1 << 4)
+#define MASK_BIG_END (1 << 5)
+#define MASK_CALLEE_INTERWORKING (1 << 6)
+#define MASK_CALLER_INTERWORKING (1 << 7)
+#define MASK_CIRRUS_FIX_INVALID_INSNS (1 << 8)
+#define MASK_FPE (1 << 9)
+#define MASK_LONG_CALLS (1 << 10)
+#define MASK_POKE_FUNCTION_NAME (1 << 11)
+#define MASK_SCHED_PROLOG (1 << 12)
+#define MASK_SINGLE_PIC_BASE (1 << 13)
+#define MASK_THUMB (1 << 14)
+#define MASK_INTERWORK (1 << 15)
+#define MASK_TPCS_FRAME (1 << 16)
+#define MASK_TPCS_LEAF_FRAME (1 << 17)
+#define MASK_NEON_VECTORIZE_QUAD (1 << 18)
+#define MASK_LITTLE_WORDS (1 << 19)
 
 #define TARGET_ABORT_NORETURN ((target_flags & MASK_ABORT_NORETURN) != 0)
-#define TARGET_ANDROID ((target_flags & MASK_ANDROID) != 0)
 #define TARGET_APCS_FLOAT ((target_flags & MASK_APCS_FLOAT) != 0)
 #define TARGET_APCS_FRAME ((target_flags & MASK_APCS_FRAME) != 0)
 #define TARGET_APCS_REENT ((target_flags & MASK_APCS_REENT) != 0)
@@ -1372,7 +1370,6 @@ enum opt_code
   OPT_lang_objc,                             /* -lang-objc */
   OPT_mabi_,                                 /* -mabi= */
   OPT_mabort_on_noreturn,                    /* -mabort-on-noreturn */
-  OPT_mandroid,                              /* -mandroid */
   OPT_mapcs,                                 /* -mapcs */
   OPT_mapcs_float,                           /* -mapcs-float */
   OPT_mapcs_frame,                           /* -mapcs-frame */

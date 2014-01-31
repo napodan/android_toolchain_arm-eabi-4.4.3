@@ -465,8 +465,7 @@ in the following sections.
 \&\-mcaller\-super\-interworking  \-mcallee\-super\-interworking 
 \&\-mtp=\fR\fIname\fR 
 \&\fB\-mword\-relocations 
-\&\-mfix\-cortex\-m3\-ldrd 
-\&\-mandroid\fR
+\&\-mfix\-cortex\-m3\-ldrd\fR
 .Sp
 \&\fI\s-1AVR\s0 Options\fR
 \&\fB\-mmcu=\fR\fImcu\fR  \fB\-msize  \-mno\-interrupts 
@@ -559,7 +558,8 @@ in the following sections.
 \&\-mcpu=\fR\fIcpu\fR
 .Sp
 \&\fIGNU/Linux Options\fR
-\&\fB\-muclibc\fR
+\&\fB\-mglibc \-muclibc \-mbionic \-mandroid 
+\&\-tno\-android\-cc \-tno\-android\-ld\fR
 .Sp
 \&\fIH8/300 Options\fR
 \&\fB\-mrelax  \-mh  \-ms  \-mn  \-mint32  \-malign\-300\fR
@@ -8845,36 +8845,6 @@ Only generate absolute relocations on word sized values (i.e. R_ARM_ABS32).
 This is enabled by default on targets (uClinux, SymbianOS) where the runtime
 loader imposes this restriction, and when \fB\-fpic\fR or \fB\-fPIC\fR
 is specified.
-.IP "\fB\-mandroid\fR" 4
-.IX Item "-mandroid"
-Enable Android specific compilier options.
-.Sp
-If this option is used, a preprocessor macro \f(CW\*(C`_\|_ANDROID_\|_\*(C'\fR is defined
-and has the value 1 during compilation. The option also implies C/\*(C+ options
-\&\fB\-fno\-exceptions\fR \fB\-fpic\fR \fB\-mthumb\-interwork\fR
-\&\fB\-fno\-short\-enums\fR and \*(C+ option \fB\-fno\-rtti\fR. These implied
-options can be overridden. For example \s-1RTTI\s0 in \*(C+ code can still be enabled
-with \-frtti even when \-mandroid is also used.
-.Sp
-Linking options depend on whether a static executable, a dynamic
-executable or a shared library is built. When \fB\-static\fR is given,
-\&\fB\-mandroid\fR implies linking flag \fB\-Bstatic\fR, start file
-\&\fIcrtbegin_static.o\fR and end file \fIcrtend_android.o\fR.
-.Sp
-When \fB\-shared\fR is given, \fB\-mandroid\fR implies the linking
-flag \fB\-Bsymbolic\fR and no start and end files.
-.Sp
-When none of \fB\-static\fR and \fB\-shared\fR is given, \fB\-mandroid\fR
-implies linking flags \fB\-Bdynamic \-dynamic\-linker /system/bin/linker\fR,
-start file \fIcrtbegin_dynamic.o\fR and end file \fIcrtend_android.o\fR. The
-dynamic linker used can be overriden by another \fB\-dynamic\-linker\fR in
-command line.
-.Sp
-The linking option \fB\-ldl\fR is also added if \fB\-static\fR is not
-given.
-.Sp
-If more than one of \fB\-dynamic\fR, \fB\-static\fR and \fB\-shared\fR
-are given, behaviour of \fB\-mandroid\fR is undefined.
 .PP
 \fI\s-1AVR\s0 Options\fR
 .IX Subsection "AVR Options"
@@ -10095,12 +10065,35 @@ Select the processor type for which to generate code.  Possible values are
 These \fB\-m\fR options are defined for GNU/Linux targets:
 .IP "\fB\-mglibc\fR" 4
 .IX Item "-mglibc"
-Use the \s-1GNU\s0 C library instead of uClibc.  This is the default except
-on \fB*\-*\-linux\-*uclibc*\fR targets.
+Use the \s-1GNU\s0 C library.  This is the default except
+on \fB*\-*\-linux\-*uclibc*\fR and \fB*\-*\-linux\-*android*\fR targets.
 .IP "\fB\-muclibc\fR" 4
 .IX Item "-muclibc"
-Use uClibc instead of the \s-1GNU\s0 C library.  This is the default on
+Use uClibc C library.  This is the default on
 \&\fB*\-*\-linux\-*uclibc*\fR targets.
+.IP "\fB\-mbionic\fR" 4
+.IX Item "-mbionic"
+Use Bionic C library.  This is the default on
+\&\fB*\-*\-linux\-*android*\fR targets.
+.IP "\fB\-mandroid\fR" 4
+.IX Item "-mandroid"
+Compile code compatible with Android platform.  This is the default on
+\&\fB*\-*\-linux\-*android*\fR targets.
+.Sp
+When compiling, this option enables \fB\-mbionic\fR, \fB\-fPIC\fR,
+\&\fB\-fno\-exceptions\fR and \fB\-fno\-rtti\fR by default.  When linking,
+this option makes the \s-1GCC\s0 driver pass Android-specific options to the linker.
+Finally, this option causes the preprocessor macro \f(CW\*(C`_\|_ANDROID_\|_\*(C'\fR
+to be defined.
+.IP "\fB\-tno\-android\-cc\fR" 4
+.IX Item "-tno-android-cc"
+Disable compilation effects of \fB\-mandroid\fR, i.e., do not enable
+\&\fB\-mbionic\fR, \fB\-fPIC\fR, \fB\-fno\-exceptions\fR and
+\&\fB\-fno\-rtti\fR by default.
+.IP "\fB\-tno\-android\-ld\fR" 4
+.IX Item "-tno-android-ld"
+Disable linking effects of \fB\-mandroid\fR, i.e., pass standard Linux
+linking options to the linker.
 .PP
 \fIH8/300 Options\fR
 .IX Subsection "H8/300 Options"

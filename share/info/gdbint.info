@@ -7299,8 +7299,8 @@ in log files in the directory the script was called from.
 
 File: gdbint.info,  Node: GDB Observers,  Next: GNU Free Documentation License,  Prev: Hints,  Up: Top
 
-Appendix A GDB Currently available observers
-********************************************
+Annexe A GDB Currently available observers
+******************************************
 
 A.1 Implementation rationale
 ============================
@@ -7483,8 +7483,8 @@ emitted.
 
 File: gdbint.info,  Node: GNU Free Documentation License,  Next: Index,  Prev: GDB Observers,  Up: Top
 
-Appendix B GNU Free Documentation License
-*****************************************
+Annexe B GNU Free Documentation License
+***************************************
 
                       Version 1.2, November 2002
 
@@ -8760,7 +8760,7 @@ Node: Hints289837
 Node: Getting Started290159
 Node: Debugging GDB294302
 Node: GDB Observers299367
-Node: GNU Free Documentation License307269
-Node: Index329713
+Node: GNU Free Documentation License307265
+Node: Index329705
 
 End Tag Table
