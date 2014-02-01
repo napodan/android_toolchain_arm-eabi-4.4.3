@@ -3,7 +3,7 @@ Project GIT repository git://android.git.kernel.org/toolchain.
 
 
 gcc/ synced to
-	commit fe2afdf3f3701489c05d2a7509752d6f0c7616f7
+	commit d7030123e04baab5dbff9c9ee04c0de99bd9a774
     There is a bug in this gcc. We need a fix in llvm to be able to build
 
 binutils/ synced to
@@ -30,6 +30,6 @@ epxort LANG=C
 build-sysroot.sh $OUT /home/david/sysroot_oxygen/ 
 cd build
 
-./configure --prefix=/home/david/arm-eabi-4.4.3/ --target=arm-eabi --host=x86_64-linux-gnu --build=x86_64-linux-gnu --with-gnu-as --with-gnu-ld --enable-languages=c,c++ --disable-libssp --enable-threads --disable-nls --disable-libmudflap --disable-libgomp --disable-libstdc__-v3 --disable-sjlj-exceptions --disable-shared --disable-tls --with-float=soft --with-fpu=neon --with-arch=armv7-a --with-tune=cortex-a8 --enable-target-optspace --with-abi=aapcs --with-gcc-version=4.4.3 --with-gmp-version=4.2.4 --with-mpfr-version=2.4.1 --with-gdb-version=7.1.x --with-multilib-list=mandroid --with-sysroot=/home/david/sysroot_oxygen/ --with-binutils-version=2.20.1 --with-gold-version=20100303 --enable-gold=both/gold --program-transform-name='s&^&arm-eabi-&'
+./configure --prefix=/home/david/arm-eabi-4.4.3/ --target=arm-linux-androideabi --host=x86_64-linux-gnu --build=x86_64-linux-gnu --with-gnu-as --with-gnu-ld --enable-languages=c,c++ --disable-libssp --enable-threads --disable-nls --disable-libmudflap --disable-libgomp --disable-libstdc__-v3 --disable-sjlj-exceptions --disable-shared --disable-tls --with-float=soft --with-fpu=neon --with-arch=armv7-a --with-tune=cortex-a8 --enable-target-optspace --with-abi=aapcs --with-gcc-version=4.4.3 --with-gmp-version=4.2.4 --with-mpfr-version=2.4.1 --with-gdb-version=7.1.x --with-multilib-list=mandroid --with-sysroot=/home/david/sysroot_oxygen/ --with-binutils-version=2.20.1 --with-gold-version=20100303 --enable-gold=both/gold --program-transform-name='s&^&arm-linux-androideabi-&'
 
 
