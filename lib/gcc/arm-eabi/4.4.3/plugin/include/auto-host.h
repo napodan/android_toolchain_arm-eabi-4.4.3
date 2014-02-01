@@ -47,6 +47,12 @@
 #endif
 
 
+/* Define to 1 to enable crtbeginTS.o. */
+#ifndef USED_FOR_TARGET
+/* #undef ENABLE_CRTBEGINTS */
+#endif
+
+
 /* Define to 1 to specify that we are using the BID decimal floating point
    format instead of DPD */
 #ifndef USED_FOR_TARGET
@@ -63,6 +69,12 @@
 /* Define if you want more run-time sanity checks for dataflow. */
 #ifndef USED_FOR_TARGET
 /* #undef ENABLE_DF_CHECKING */
+#endif
+
+
+/* Define to 1 to enable esp. */
+#ifndef USED_FOR_TARGET
+/* #undef ENABLE_ESP */
 #endif
 
 
@@ -993,7 +1005,7 @@
 
 /* Define .init_array/.fini_array sections are available and working. */
 #ifndef USED_FOR_TARGET
-#define HAVE_INITFINI_ARRAY 1
+/* #undef HAVE_INITFINI_ARRAY */
 #endif
 
 

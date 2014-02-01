@@ -3,7 +3,8 @@ Project GIT repository git://android.git.kernel.org/toolchain.
 
 
 gcc/ synced to
-	commit b6be42e837844cce5283f42fcfac31e6d66a277d (honeycomb)
+	commit fe2afdf3f3701489c05d2a7509752d6f0c7616f7
+    There is a bug in this gcc. We need a fix in llvm to be able to build
 
 binutils/ synced to
 	commit e4df3e0a5bb640ccfa2f30ee67fe9b3146b152d6
