@@ -6,8 +6,12 @@ gcc/ synced to
 	commit d7030123e04baab5dbff9c9ee04c0de99bd9a774
     There is a bug in this gcc. We need a fix in llvm to be able to build
 
+    + patch to add __ARM_FEATURE_DSP
+
 binutils/ synced to
-	commit e4df3e0a5bb640ccfa2f30ee67fe9b3146b152d6
+	commit cf3cdbf8b3cda61a619299e7966a83df66244036
+
+    + patch to add vmrs and vmsr
 
 gdb/ synced to
 	commit 5f9d38fd85e779aa1fd17eb38d24f8ec994d9147
@@ -26,7 +30,6 @@ build/ synced to
 	commit 7ee395d10100fc9ed2c03c49b949033600082a4f
 
 commands :
-epxort LANG=C
 build-sysroot.sh $OUT /home/david/sysroot_oxygen/ 
 cd build
 
